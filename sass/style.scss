@@ -1,0 +1,158 @@
+@import 'reset';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import 'variables';
+@import 'grid';
+
+@import 'nav';
+
+body {
+    background-color: $yellowColour;
+}
+
+.fontSmB {
+    font-family: 'Libre Franklin';
+    font-weight: 600;
+}
+
+.fontMd {
+    font-family: 'Libre Franklin';
+    font-weight: 500;
+}
+
+.fontReg {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+}
+
+.fontRegIt {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+    font-style: italic;
+}
+
+.textYellow {
+    color: $yellowColour;
+}
+
+.textBlue {
+    color: $darkBlueColour;
+}
+
+.textYellow {
+    color: black;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoFull {
+    width: 200px;
+}
+
+.bgBlue {
+    background-color: $darkBlueColour;
+}
+
+.bgYellow {
+    background-color: $yellowColour;
+}
+
+.buttonLg {
+    display: inline-block;
+    color: $yellowColour;
+    padding: 25px;
+    margin-top: 50px;
+    width: 270px;
+    height: auto;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 26px;
+}
+
+.buttonSm {
+    display: inline-block;
+    color: $darkBlueColour;
+    padding: 7px;
+    margin-top: 50px;
+    width: 190px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.helpIcon {
+    font-size: 25px;
+    text-align: left;
+    padding-right: 5px;
+}
+
+.buttonRow {
+    flex-direction: row;
+}
+
+@media screen and (min-width:$mdWidth){
+
+    .logoFull {
+        width: 275px;
+    }
+
+    .buttonLg {
+        width: 400px;
+        font-size: 30px;
+        padding: 40px;
+    }
+
+    .buttonSm {
+        width: 240px;
+        font-size: 24px;
+        padding: 18px;
+    }
+}
+
+@media screen and (min-width:$lgWidth){
+    .logoFull {
+        width: 300px;
+    }
+
+    .buttonLg {
+        width: 300px;
+        font-size: 30px;
+        padding: 30px;
+        margin: 50px 28px 0 28px;
+    }
+
+    .buttonSm {
+        width: 250px;
+        font-size: 24px;
+    }
+}

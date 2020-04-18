@@ -1,0 +1,169 @@
+.navbar {
+    padding: 0px;
+    // color: $yellowColour;
+    position: fixed;
+    // top: 0;
+    // left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10000;
+    // transition: background-color 0.25s;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.navLogo {
+    width: 150px;
+    align-items: center;
+    padding: 15px;
+}
+
+.headerImg {
+    justify-content: center;
+    position: relative;
+}
+
+.navList {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.listItem {
+    padding: 20px;
+    font-size: 20px;
+    color: $yellowColour;
+}
+
+.listItemOpp {
+    padding: 20px;
+    font-size: 20px;
+    color: $darkBlueColour;
+    background-color: $yellowColour !important;
+}
+
+.navIcon {
+    color: $yellowColour;
+    font-size: 18px;
+}
+
+.navButton {
+    color: $yellowColour;
+    font-size: 20px;
+}
+
+.navFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    // border-color: $yellowColour;
+    // border-width: thick;
+    // border-style: solid;
+}
+
+.waiterButton {
+    display: none;
+    color: $yellowColour;
+    font-size: 20px;
+    float: left;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+// .line {
+//     border-left: 6px solid $yellowColour;
+//     height: 60px;
+//     position: absolute;
+//     left: 50%;
+//     margin-left: -3px;
+//     top: 0;
+// }
+
+@media screen and (min-width:$mdWidth){
+
+    .navLogo {
+        width: 250px;
+    }
+
+    .listItem {
+        font-size: 24px;
+    }
+
+    .listItemOpp {
+        font-size: 24px;
+    }
+
+    .navButton {
+        font-size: 24px;
+    }
+
+    .navIcon {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (min-width:$lgWidth){
+
+    .waiterButton {
+        display: flex;
+        font-size: 24px;
+    }
+
+    .navIcon {
+        display: none;
+    }
+
+    .navList {
+        display: block !important;
+        background-color: $whiteColour !important;
+        width: 90%;
+        // justify-content: space-between;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            .listItem {
+                color: $darkBlueColour !important;
+                font-size: 32px;
+                padding: 5px 0 5px 0;
+            }
+        }}
+
+    #closeButton {
+        display: none;
+    }
+
+    .waiterMenu {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    #navButtons {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .navLogo {
+        width: 325px;
+    }
+
+    .navButton {
+        font-size: 24px;
+    }
+}
