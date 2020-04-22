@@ -126,7 +126,6 @@ body {
 }
 
 .headingsBar {
-    // padding: 25px;
     background-color: $yellowColour;
     color: black;
     flex-direction: column;
@@ -157,7 +156,6 @@ body {
     color: $darkBlueColour;
     flex-direction: row;
     flex-wrap: wrap;
-    // border: 50px solid $yellowColour;
     border-left: 30px solid $yellowColour;
     border-right: 30px solid $yellowColour;
 }
@@ -194,8 +192,6 @@ body {
 .floatRight {
     float: right;
 }
-
-
 
 
 @media screen and (min-width:$mdWidth){

@@ -1,13 +1,9 @@
 .navbar {
     padding: 0px;
-    // color: $yellowColour;
     position: fixed;
-    // top: 0;
-    // left: 0;
     bottom: 0;
     width: 100%;
     z-index: 10000;
-    // transition: background-color 0.25s;
 }
 
 .navContainer {
@@ -67,9 +63,6 @@
     justify-content: space-around;
     width: 100%;
     padding: 10px;
-    // border-color: $yellowColour;
-    // border-width: thick;
-    // border-style: solid;
 }
 
 .waiterButton {
@@ -109,10 +102,8 @@
     width: 100%;
     padding: 10px 10px 0 10px;
     background-color: $whiteColour;
-    // color: $darkBlueColour;
     flex-direction: row;
     flex-wrap: wrap;
-    // border: 50px solid $yellowColour;
     border-left: 20px solid $darkBlueColour;
     border-right: 20px solid $darkBlueColour;
     border-top: 10px solid $darkBlueColour;
@@ -135,7 +126,6 @@
 }
 
 .orderCloseButtonStyle {
-    // display: none;
     width: 100% !important;
     padding: 10px;
     font-size: 20px;
@@ -144,7 +134,6 @@
 }
 
 .orderCloseButton {
-    // display: none;
     text-align: center;
     padding: 20px;
 }
@@ -214,7 +203,6 @@
         display: block !important;
         background-color: $whiteColour !important;
         width: 80%;
-        // justify-content: space-between;
         ul {
             display: flex;
             justify-content: space-around;
@@ -290,19 +278,6 @@
     .orderTotal {
         font-size: 18px;
     }
-
-    // .orderSection {
-    //     width: 100%;
-    //     padding: 10px 10px 0 10px;
-    //     background-color: $whiteColour;
-    //     // color: $darkBlueColour;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     // border: 50px solid $yellowColour;
-    //     border-left: 20px solid $darkBlueColour;
-    //     border-right: 20px solid $darkBlueColour;
-    //     border-top: 10px solid $darkBlueColour;
-    // }
 
     .placeOrderButton {
         width: 175px;
