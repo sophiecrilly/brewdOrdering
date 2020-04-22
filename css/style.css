@@ -644,11 +644,11 @@ textarea {
 
 /* line 22, ../sass/_nav.scss */
 .navLogo {
-  width: 150px;
+  width: 230px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px;
+  padding-top: 8px;
 }
 
 /* line 28, ../sass/_nav.scss */
@@ -720,59 +720,171 @@ textarea {
 }
 
 /* line 82, ../sass/_nav.scss */
+.viewOrder {
+  display: none;
+  width: 100%;
+}
+
+/* line 87, ../sass/_nav.scss */
+.orderTitle {
+  color: #FFCA08;
+  font-size: 24px;
+  padding: 10px 10px 0 20px;
+}
+
+/* line 93, ../sass/_nav.scss */
+.orderItemTitle {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+/* line 98, ../sass/_nav.scss */
+.orderItem {
+  font-size: 12px;
+}
+
+/* line 102, ../sass/_nav.scss */
+.orderTotal {
+  font-size: 14px;
+  padding: 10px;
+  text-align: right;
+}
+
+/* line 108, ../sass/_nav.scss */
+.orderSection {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  background-color: #FEFFFF;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-left: 20px solid #1F262E;
+  border-right: 20px solid #1F262E;
+  border-top: 10px solid #1F262E;
+}
+
+/* line 121, ../sass/_nav.scss */
 .displayFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+/* line 125, ../sass/_nav.scss */
+.placeOrderButton {
+  background-color: #FFCA08;
+  color: #1F262E;
+  width: 145px;
+  padding: 10px;
+}
+
+/* line 132, ../sass/_nav.scss */
+.placeOrderFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 137, ../sass/_nav.scss */
+.orderCloseButtonStyle {
+  width: 100% !important;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #FFCA08;
+  color: #1F262E;
+}
+
+/* line 146, ../sass/_nav.scss */
+.orderCloseButton {
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 152, ../sass/_nav.scss */
+.listStyle {
+  text-decoration: none;
+}
+/* line 154, ../sass/_nav.scss */
+.listStyle:link {
+  color: #FFCA08;
+}
+/* line 157, ../sass/_nav.scss */
+.listStyle:visited {
+  color: #FFCA08;
+}
+/* line 160, ../sass/_nav.scss */
+.listStyle:active {
+  color: #FFCA08;
+}
+
+/* line 165, ../sass/_nav.scss */
+.orderButtonsStyle {
+  text-decoration: none;
+}
+/* line 167, ../sass/_nav.scss */
+.orderButtonsStyle:link {
+  color: #1F262E;
+}
+/* line 170, ../sass/_nav.scss */
+.orderButtonsStyle:visited {
+  color: #1F262E;
+}
+/* line 173, ../sass/_nav.scss */
+.orderButtonsStyle:active {
+  color: #1F262E;
+}
+
 @media screen and (min-width: 600px) {
-  /* line 97, ../sass/_nav.scss */
+  /* line 180, ../sass/_nav.scss */
   .navLogo {
-    width: 250px;
+    width: 300px;
   }
 
-  /* line 101, ../sass/_nav.scss */
+  /* line 184, ../sass/_nav.scss */
   .listItem {
     font-size: 24px;
   }
 
-  /* line 105, ../sass/_nav.scss */
+  /* line 188, ../sass/_nav.scss */
   .listItemOpp {
     font-size: 24px;
   }
 
-  /* line 109, ../sass/_nav.scss */
+  /* line 192, ../sass/_nav.scss */
   .navButton {
     font-size: 24px;
   }
 
-  /* line 113, ../sass/_nav.scss */
+  /* line 196, ../sass/_nav.scss */
   .navIcon {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 121, ../sass/_nav.scss */
+  /* line 204, ../sass/_nav.scss */
   .waiterButton {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     font-size: 24px;
   }
 
-  /* line 126, ../sass/_nav.scss */
+  /* line 209, ../sass/_nav.scss */
   .navIcon {
     display: none;
   }
 
-  /* line 130, ../sass/_nav.scss */
+  /* line 213, ../sass/_nav.scss */
   .navList {
     display: block !important;
     background-color: #FEFFFF !important;
-    width: 90%;
+    width: 80%;
   }
-  /* line 135, ../sass/_nav.scss */
+  /* line 218, ../sass/_nav.scss */
   .navList ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -780,90 +892,356 @@ textarea {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  /* line 138, ../sass/_nav.scss */
+  /* line 221, ../sass/_nav.scss */
   .navList ul .listItem {
     color: #1F262E !important;
-    font-size: 32px;
+    font-size: 24px;
     padding: 5px 0 5px 0;
   }
 
-  /* line 145, ../sass/_nav.scss */
+  /* line 228, ../sass/_nav.scss */
+  .listStyle {
+    text-decoration: none;
+  }
+  /* line 230, ../sass/_nav.scss */
+  .listStyle:link {
+    color: black;
+  }
+  /* line 233, ../sass/_nav.scss */
+  .listStyle:visited {
+    color: black;
+  }
+  /* line 236, ../sass/_nav.scss */
+  .listStyle:hover {
+    color: #FFCA08;
+    text-decoration: underline;
+  }
+  /* line 240, ../sass/_nav.scss */
+  .listStyle:active {
+    color: black;
+  }
+
+  /* line 245, ../sass/_nav.scss */
   #closeButton {
     display: none;
   }
 
-  /* line 149, ../sass/_nav.scss */
+  /* line 249, ../sass/_nav.scss */
   .waiterMenu {
     display: none;
   }
 
-  /* line 153, ../sass/_nav.scss */
+  /* line 253, ../sass/_nav.scss */
   .navbar {
     position: relative;
   }
 
-  /* line 157, ../sass/_nav.scss */
+  /* line 257, ../sass/_nav.scss */
   #navButtons {
     position: fixed;
     bottom: 0;
   }
 
-  /* line 162, ../sass/_nav.scss */
+  /* line 262, ../sass/_nav.scss */
   .navLogo {
     width: 325px;
   }
 
-  /* line 166, ../sass/_nav.scss */
+  /* line 266, ../sass/_nav.scss */
   .navButton {
     font-size: 24px;
   }
+
+  /* line 270, ../sass/_nav.scss */
+  .viewOrder {
+    display: none;
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  /* line 278, ../sass/_nav.scss */
+  .orderTitle {
+    font-size: 28px;
+  }
+
+  /* line 282, ../sass/_nav.scss */
+  .orderItemTitle {
+    font-size: 18px;
+  }
+
+  /* line 286, ../sass/_nav.scss */
+  .orderItem {
+    font-size: 16px;
+  }
+
+  /* line 290, ../sass/_nav.scss */
+  .orderTotal {
+    font-size: 18px;
+  }
+
+  /* line 307, ../sass/_nav.scss */
+  .placeOrderButton {
+    width: 175px;
+    padding: 15px;
+  }
+
+  /* line 312, ../sass/_nav.scss */
+  .orderCloseButtonStyle {
+    font-size: 20px;
+  }
 }
-/* line 14, ../sass/style.scss */
-body {
-  background-color: #FFCA08;
+/* line 7, ../sass/_modals.scss */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 19, ../sass/_modals.scss */
+.hidden {
+  display: none;
+}
+
+/* line 23, ../sass/_modals.scss */
+.borderTop {
+  border-top: 25px solid #1F262E;
+}
+
+/* line 27, ../sass/_modals.scss */
+.noScroll {
+  overflow-y: hidden;
+}
+
+/* line 31, ../sass/_modals.scss */
+.modalClose {
+  color: #FFCA08;
+  font-size: 20px;
+  top: 0 !important;
+  right: 0 !important;
+  position: absolute !important;
+  padding: 10px;
+}
+
+/* line 40, ../sass/_modals.scss */
+.modalWaiter {
+  background-color: #1F262E;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  color: #FFCA08;
+  font-size: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-left: 25px solid #1F262E;
+}
+
+/* line 52, ../sass/_modals.scss */
+.modalAddOrder {
+  background-color: #1F262E;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 475px;
+  color: #FFCA08;
+  font-size: 28px;
+  position: relative;
+}
+
+/* line 61, ../sass/_modals.scss */
+.modalAddOrder2 {
+  background-color: #1F262E;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  color: #FFCA08;
+  font-size: 28px;
+  position: relative;
+}
+
+/* line 70, ../sass/_modals.scss */
+.paddingBot {
+  padding-bottom: 10px;
+}
+
+/* line 74, ../sass/_modals.scss */
+.modalOrderBox1 {
+  width: 250px;
+  height: 75px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 82, ../sass/_modals.scss */
+.modalOrderBox2 {
+  width: 250px;
+  height: 180px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 89, ../sass/_modals.scss */
+.addOrderButton {
+  background-color: #FFCA08;
+  color: #1F262E;
+  width: 145px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 97, ../sass/_modals.scss */
+.addOrderFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+/* line 102, ../sass/_modals.scss */
+.addToOrderStyle {
+  text-decoration: none;
+}
+/* line 104, ../sass/_modals.scss */
+.addToOrderStyle:link {
+  color: #1F262E;
+}
+/* line 107, ../sass/_modals.scss */
+.addToOrderStyle:visited {
+  color: #1F262E;
+}
+/* line 110, ../sass/_modals.scss */
+.addToOrderStyle:active {
+  color: #1F262E;
+}
+
+/* line 115, ../sass/_modals.scss */
+.closeOrderPlacedButton {
+  background-color: #FFCA08;
+  color: #1F262E;
+  width: 145px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* line 123, ../sass/_modals.scss */
+.closeOrderPlacedFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+/* line 128, ../sass/_modals.scss */
+.closeOrderPlacedStyle {
+  text-decoration: none;
+}
+/* line 130, ../sass/_modals.scss */
+.closeOrderPlacedStyle:link {
+  color: #1F262E;
+}
+/* line 133, ../sass/_modals.scss */
+.closeOrderPlacedStyle:visited {
+  color: #1F262E;
+}
+/* line 136, ../sass/_modals.scss */
+.closeOrderPlacedStyle:active {
+  color: #1F262E;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 144, ../sass/_modals.scss */
+  .modalWaiter {
+    width: 350px;
+    height: 200px;
+    font-size: 36px;
+    border-left: 55px solid #1F262E;
+  }
+
+  /* line 151, ../sass/_modals.scss */
+  .borderTop {
+    border-top: 45px solid #1F262E;
+  }
+
+  /* line 155, ../sass/_modals.scss */
+  .modalClose {
+    font-size: 28px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 163, ../sass/_modals.scss */
+  .displayNone {
+    display: none;
+  }
+}
+/* line 15, ../sass/style.scss */
+body {
+  background-color: #FFCA08;
+  margin-bottom: 75px;
+}
+
+/* line 20, ../sass/style.scss */
 .fontSmB {
   font-family: 'Libre Franklin';
   font-weight: 600;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .fontMd {
   font-family: 'Libre Franklin';
   font-weight: 500;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .fontReg {
   font-family: 'Libre Franklin';
   font-weight: 400;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .fontRegIt {
   font-family: 'Libre Franklin';
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .textYellow {
   color: #FFCA08;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .textBlue {
   color: #1F262E;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .textYellow {
   color: black;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .banner {
   width: 100%;
   height: 100vh;
@@ -883,10 +1261,9 @@ body {
           align-items: center;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,22 +1280,27 @@ body {
           flex-direction: column;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .logoFull {
   width: 200px;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .bgBlue {
   background-color: #1F262E;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .bgYellow {
   background-color: #FFCA08;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
+.bgWhite {
+  background-color: #FEFFFF;
+}
+
+/* line 91, ../sass/style.scss */
 .buttonLg {
   display: inline-block;
   color: #FFCA08;
@@ -931,7 +1313,7 @@ body {
   font-size: 26px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .buttonSm {
   display: inline-block;
   color: #1F262E;
@@ -943,19 +1325,19 @@ body {
   font-size: 20px;
 }
 
-/* line 109, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .textCenter {
   text-align: center;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .helpIcon {
   font-size: 25px;
   text-align: left;
   padding-right: 5px;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .buttonRow {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -963,33 +1345,163 @@ body {
           flex-direction: row;
 }
 
+/* line 128, ../sass/style.scss */
+.headingsBar {
+  background-color: #FFCA08;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* line 136, ../sass/style.scss */
+.pageHeadings {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 141, ../sass/style.scss */
+.pageTitle {
+  font-size: 32px;
+  background-color: #FEFFFF;
+  width: 65%;
+  padding: 8px;
+}
+
+/* line 148, ../sass/style.scss */
+.dietTitle {
+  font-size: 16px;
+  padding: 8px;
+}
+
+/* line 153, ../sass/style.scss */
+.menuSection {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  background-color: #FEFFFF;
+  color: #1F262E;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-left: 30px solid #FFCA08;
+  border-right: 30px solid #FFCA08;
+}
+
+/* line 165, ../sass/style.scss */
+.menuTitle {
+  font-size: 20px;
+  padding: 10px 10px 10px 0;
+}
+
+/* line 170, ../sass/style.scss */
+.menuItem {
+  font-size: 12px;
+  padding: 0 24px 20px 0;
+}
+
+/* line 175, ../sass/style.scss */
+.addButton {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+/* line 180, ../sass/style.scss */
+.menuPrice {
+  font-size: 16px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* line 186, ../sass/style.scss */
+.menuExtra {
+  font-size: 10px;
+}
+
+/* line 190, ../sass/style.scss */
+.marginBot {
+  margin-bottom: 30px;
+}
+
+/* line 194, ../sass/style.scss */
+.floatRight {
+  float: right;
+}
+
 @media screen and (min-width: 600px) {
-  /* line 125, ../sass/style.scss */
+  /* line 203, ../sass/style.scss */
   .logoFull {
     width: 275px;
   }
 
-  /* line 129, ../sass/style.scss */
+  /* line 207, ../sass/style.scss */
   .buttonLg {
     width: 400px;
     font-size: 30px;
     padding: 40px;
   }
 
-  /* line 135, ../sass/style.scss */
+  /* line 213, ../sass/style.scss */
   .buttonSm {
     width: 240px;
     font-size: 24px;
     padding: 18px;
   }
+
+  /* line 219, ../sass/style.scss */
+  .pageTitle {
+    font-size: 40px;
+    width: 40%;
+    padding: 8px;
+  }
+
+  /* line 225, ../sass/style.scss */
+  .dietTitle {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* line 230, ../sass/style.scss */
+  .menuTitle {
+    font-size: 28px;
+  }
+
+  /* line 234, ../sass/style.scss */
+  .menuItem {
+    font-size: 18px;
+  }
+
+  /* line 238, ../sass/style.scss */
+  .addButton {
+    font-size: 26px;
+  }
+
+  /* line 242, ../sass/style.scss */
+  .menuPrice {
+    font-size: 22px;
+  }
+
+  /* line 246, ../sass/style.scss */
+  .menuExtra {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 900px) {
-  /* line 143, ../sass/style.scss */
+  /* line 252, ../sass/style.scss */
   .logoFull {
     width: 300px;
   }
 
-  /* line 147, ../sass/style.scss */
+  /* line 256, ../sass/style.scss */
   .buttonLg {
     width: 300px;
     font-size: 30px;
@@ -997,10 +1509,60 @@ body {
     margin: 50px 28px 0 28px;
   }
 
-  /* line 154, ../sass/style.scss */
+  /* line 263, ../sass/style.scss */
   .buttonSm {
     width: 250px;
     font-size: 24px;
+  }
+
+  /* line 268, ../sass/style.scss */
+  .pageHeadings {
+    position: relative;
+  }
+
+  /* line 272, ../sass/style.scss */
+  .pageTitle {
+    font-size: 40px;
+    background-color: #FFCA08;
+    padding: 8px;
+  }
+
+  /* line 278, ../sass/style.scss */
+  .dietTitle {
+    position: absolute;
+    right: 0;
+    margin-right: 8%;
+  }
+
+  /* line 284, ../sass/style.scss */
+  .menuSection {
+    border-left: 85px solid #FFCA08;
+    border-right: 85px solid #FFCA08;
+  }
+
+  /* line 289, ../sass/style.scss */
+  .menuTitle {
+    font-size: 28px;
+  }
+
+  /* line 293, ../sass/style.scss */
+  .menuItem {
+    font-size: 18px;
+  }
+
+  /* line 297, ../sass/style.scss */
+  .addButton {
+    font-size: 26px;
+  }
+
+  /* line 301, ../sass/style.scss */
+  .menuPrice {
+    font-size: 22px;
+  }
+
+  /* line 305, ../sass/style.scss */
+  .menuExtra {
+    font-size: 16px;
   }
 }
 

@@ -20,9 +20,9 @@
 }
 
 .navLogo {
-    width: 150px;
+    width: 230px;
     align-items: center;
-    padding: 15px;
+    padding-top: 8px;
 }
 
 .headerImg {
@@ -79,23 +79,106 @@
     float: left;
 }
 
+.viewOrder {
+    display: none;
+    width: 100%
+}
+
+.orderTitle {
+    color: $yellowColour;
+    font-size: 24px;
+    padding: 10px 10px 0 20px;
+}
+
+.orderItemTitle {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.orderItem {
+    font-size: 12px;
+}
+
+.orderTotal {
+    font-size: 14px;
+    padding: 10px;
+    text-align: right;
+}
+
+.orderSection {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    background-color: $whiteColour;
+    // color: $darkBlueColour;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // border: 50px solid $yellowColour;
+    border-left: 20px solid $darkBlueColour;
+    border-right: 20px solid $darkBlueColour;
+    border-top: 10px solid $darkBlueColour;
+}
+
 .displayFlex {
     display: flex;
 }
 
-// .line {
-//     border-left: 6px solid $yellowColour;
-//     height: 60px;
-//     position: absolute;
-//     left: 50%;
-//     margin-left: -3px;
-//     top: 0;
-// }
+.placeOrderButton {
+    background-color: $yellowColour;
+    color: $darkBlueColour;
+    width: 145px;
+    padding: 10px;
+}
+
+.placeOrderFlex {
+    justify-content: center;
+    align-items: center;
+}
+
+.orderCloseButtonStyle {
+    // display: none;
+    width: 100% !important;
+    padding: 10px;
+    font-size: 20px;
+    background-color: $yellowColour;
+    color: $darkBlueColour;
+}
+
+.orderCloseButton {
+    // display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.listStyle {
+    text-decoration: none;
+    &:link {
+        color: $yellowColour;
+    }
+    &:visited {
+        color: $yellowColour;
+    }
+    &:active {
+        color: $yellowColour;
+    }
+}
+
+.orderButtonsStyle {
+    text-decoration: none;
+    &:link {
+        color: $darkBlueColour;
+    }
+    &:visited {
+        color: $darkBlueColour;
+    }
+    &:active {
+        color: $darkBlueColour;
+    }
+}
 
 @media screen and (min-width:$mdWidth){
 
     .navLogo {
-        width: 250px;
+        width: 300px;
     }
 
     .listItem {
@@ -119,7 +202,7 @@
 @media screen and (min-width:$lgWidth){
 
     .waiterButton {
-        display: flex;
+        display: block;
         font-size: 24px;
     }
 
@@ -130,17 +213,34 @@
     .navList {
         display: block !important;
         background-color: $whiteColour !important;
-        width: 90%;
+        width: 80%;
         // justify-content: space-between;
         ul {
             display: flex;
             justify-content: space-around;
             .listItem {
                 color: $darkBlueColour !important;
-                font-size: 32px;
+                font-size: 24px;
                 padding: 5px 0 5px 0;
             }
         }}
+
+    .listStyle {
+        text-decoration: none;
+        &:link {
+            color: black;
+        }
+        &:visited {
+            color: black;
+        }
+        &:hover {
+            color: $yellowColour;
+            text-decoration: underline;
+        }
+        &:active {
+            color: black;
+        }
+    }
 
     #closeButton {
         display: none;
@@ -166,4 +266,51 @@
     .navButton {
         font-size: 24px;
     }
+
+    .viewOrder {
+        display: none;
+        width: 50%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .orderTitle {
+        font-size: 28px;
+    }
+
+    .orderItemTitle {
+        font-size: 18px;
+    }
+
+    .orderItem {
+        font-size: 16px;
+    }
+
+    .orderTotal {
+        font-size: 18px;
+    }
+
+    // .orderSection {
+    //     width: 100%;
+    //     padding: 10px 10px 0 10px;
+    //     background-color: $whiteColour;
+    //     // color: $darkBlueColour;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     // border: 50px solid $yellowColour;
+    //     border-left: 20px solid $darkBlueColour;
+    //     border-right: 20px solid $darkBlueColour;
+    //     border-top: 10px solid $darkBlueColour;
+    // }
+
+    .placeOrderButton {
+        width: 175px;
+        padding: 15px;
+    }
+
+    .orderCloseButtonStyle {
+        font-size: 20px;
+    }
+
 }

@@ -10,9 +10,11 @@
 @import 'grid';
 
 @import 'nav';
+@import 'modals';
 
 body {
     background-color: $yellowColour;
+    margin-bottom: 75px;
 }
 
 .fontSmB {
@@ -63,7 +65,6 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -81,6 +82,10 @@ body {
 
 .bgYellow {
     background-color: $yellowColour;
+}
+
+.bgWhite {
+    background-color: $whiteColour;
 }
 
 .buttonLg {
@@ -120,6 +125,79 @@ body {
     flex-direction: row;
 }
 
+.headingsBar {
+    // padding: 25px;
+    background-color: $yellowColour;
+    color: black;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pageHeadings {
+    align-items: center;
+    flex-direction: column;
+}
+
+.pageTitle {
+    font-size: 32px;
+    background-color: $whiteColour;
+    width: 65%;
+    padding: 8px;
+}
+
+.dietTitle {
+    font-size: 16px;
+    padding: 8px;
+}
+
+.menuSection {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    background-color: $whiteColour;
+    color: $darkBlueColour;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // border: 50px solid $yellowColour;
+    border-left: 30px solid $yellowColour;
+    border-right: 30px solid $yellowColour;
+}
+
+.menuTitle {
+    font-size: 20px;
+    padding: 10px 10px 10px 0;
+}
+
+.menuItem {
+    font-size: 12px;
+    padding: 0 24px 20px 0;
+}
+
+.addButton {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.menuPrice {
+    font-size: 16px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.menuExtra {
+    font-size: 10px;
+}
+
+.marginBot {
+    margin-bottom: 30px;
+}
+
+.floatRight {
+    float: right;
+}
+
+
+
+
 @media screen and (min-width:$mdWidth){
 
     .logoFull {
@@ -136,6 +214,37 @@ body {
         width: 240px;
         font-size: 24px;
         padding: 18px;
+    }
+
+    .pageTitle {
+        font-size: 40px;
+        width: 40%;
+        padding: 8px;
+    }
+
+    .dietTitle {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .menuTitle {
+        font-size: 28px;
+    }
+
+    .menuItem {
+        font-size: 18px;
+    }
+
+    .addButton {
+        font-size: 26px;
+    }
+
+    .menuPrice {
+        font-size: 22px;
+    }
+
+    .menuExtra {
+        font-size: 14px;
     }
 }
 
@@ -155,4 +264,46 @@ body {
         width: 250px;
         font-size: 24px;
     }
+
+    .pageHeadings {
+        position: relative;
+    }
+
+    .pageTitle {
+        font-size: 40px;
+        background-color: $yellowColour;
+        padding: 8px;
+    }
+
+    .dietTitle {
+        position: absolute;
+        right: 0;
+        margin-right: 8%;
+    }
+
+    .menuSection {
+        border-left: 85px solid $yellowColour;
+        border-right: 85px solid $yellowColour;
+    }
+
+    .menuTitle {
+        font-size: 28px;
+    }
+
+    .menuItem {
+        font-size: 18px;
+    }
+
+    .addButton {
+        font-size: 26px;
+    }
+
+    .menuPrice {
+        font-size: 22px;
+    }
+
+    .menuExtra {
+        font-size: 16px;
+    }
+
 }

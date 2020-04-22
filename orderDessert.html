@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Brew'd Ordering Dessert</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <header class="displayFlex headerImg">
+            <img src="images/logo.png" class="navLogo" alt="">
+        </header>
+
+        <nav class="navbar">
+            <div class="container navContainer">
+
+                <div id="navButtons" class="navFlex bgBlue textCenter">
+                    <div id="navListButton" class="navIcon">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </div>
+
+                    <div id="callWaiter1" class="waiterButton bgBlue textCenter">
+                        <p class="fontSmB">CALL<br>WAITER</p>
+                    </div>
+
+                    <div id="viewOrderButton"class="fontSmB navButton">
+                        <p>VIEW<br>ORDER</p>
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="navList" class="navList bgBlue fontMd">
+                    <ul class="textYellow">
+                        <li class="listItem"><a href="orderLunch.html" class="listStyle">BRUNCH/LUNCH</a></li>
+
+                        <li class="listItem"><a href="orderDinner.html" class="listStyle">DINNER</a></li>
+
+                        <li class="listItem"><a href="orderDessert.html" class="listStyle">DESSERT</a></li>
+
+                        <li class="listItem"><a href="orderSnacks.html" class="listStyle">SNACKS</a></li>
+
+                        <li id="callWaiter" class="listItem waiterMenu">CALL WAITER</li>
+
+                        <li id="closeButton" class="listItemOpp">CLOSE</li>
+                    </ul>
+
+                </div>
+
+                <div id="viewOrder" class="viewOrder bgBlue">
+                    <h3 class="fontSmB orderTitle">YOUR ORDER</h3>
+
+                    <div class="row">
+                        <div class="col col12 bgWhite displayFlex orderSection">
+                            <div class="orderItemTitle fontMd col col8">
+                                <p>BREW'D BURGER</p>
+                            </div>
+
+                            <div class="orderTotal fontReg col col4">
+                                <p>$23</p>
+                            </div>
+
+                            <div class="orderItem fontRegIt col col9">
+                                <p>Ground beef pattie, smoked cheddar, pickles, tomatoes, American mustard and our special burger sauce</p>
+                            </div>
+
+                            <div class="col col3">
+
+                            </div>
+
+                            <div class="col col9 colL10 orderTotal fontRegIt">
+                                <p>SUBTOTAL</p>
+                            </div>
+                            <div class="col col3 colL2 orderTotal fontRegIt">
+                                <p>$23</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="displayFlex placeOrderFlex">
+                        <div id="placeOrder" class="placeOrderButton fontMd textCenter">
+                            <a href="#orderPlaced" class="orderButtonsStyle">PLACE ORDER</a>
+                        </div>
+                    </div>
+
+                    <div class="displayFlex orderCloseButton bgBlue fontMd">
+                        <div id="closeButtonOrder" class="orderCloseButtonStyle orderButtonsStyle">
+                            <p>CLOSE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="headingsBar">
+            <div class="displayFlex pageHeadings">
+                <div class="fontSmB pageTitle textCenter marginBot">
+                    <h2>DESSERT</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="row menuSection displayFlex">
+            <div class="col col12 bgWhite">
+                <div class="menuTitle fontMd ">
+                    <h3>DESSERTS</h3>
+                </div>
+            </div>
+
+                <div class="col col12 colL4 bgWhite displayFlex">
+                    <div class="menuItem fontMd col col8">
+                        <p>DOUGHNUT BROWNIE SUNDAE</p>
+                        <p class="fontRegIt">With Bailey’s ice cream<br>
+                        </p>
+                    </div>
+                    <div class="menuPrice menuItem fontReg col col2">
+                        <p>$13</p>
+                    </div>
+                    <div class="menuItem addButton col col2">
+                        <i class="far fa-plus-square"></i>
+                    </div>
+                </div>
+
+                <div class="col col12 colL4 bgWhite displayFlex">
+                    <div class="menuItem fontMd col col8">
+                        <p>STICKY TOFFEE PUDDING</p>
+                        <p class="fontRegIt">With toffee sauce, vanilla bean ice cream<br>
+                        </p>
+                    </div>
+                    <div class="menuPrice menuItem fontReg col col2">
+                        <p>$13</p>
+                    </div>
+                    <div class="menuItem addButton col col2">
+                        <i class="far fa-plus-square"></i>
+                    </div>
+                </div>
+
+                <div class="col col12 colL4 bgWhite displayFlex">
+                    <div class="menuItem fontMd col col8">
+                        <p>SUMMER BERRY PAVLOVA</p>
+                        <p class="fontRegIt">With kiwifruit and white chocolate chips<br>
+                        </p>
+                    </div>
+                    <div class="menuPrice menuItem fontReg col col2">
+                        <p>$13</p>
+                    </div>
+                    <div class="menuItem addButton col col2">
+                        <i class="far fa-plus-square"></i>
+                    </div>
+                </div>
+
+            </section>
+
+            <div id="modalAddOrder" class="modal hidden">
+                <div class="modalAddOrder">
+                    <div class="modalClose">
+                        <h3 id="modalCloseOrder">&#10005;</h3>
+                    </div>
+
+                    <div class="textCenter">
+                        <h2 class="fontSmB paddingBot">BREW'D<br>BURGER</h2>
+                    </div>
+
+                    <div class="textCenter">
+                        <h3 class="fontReg paddingBot">$23</h3>
+                    </div>
+
+                    <div class="modalOrderBox1 bgWhite">
+                        <div class="fontReg textBlue">
+                            <p class="paddingBot">Quantity</p>
+                        </div>
+                        <div class="textCenter fontMd textBlue">
+                            <p>1</p>
+                        </div>
+                    </div>
+
+                    <div class="modalOrderBox2 bgWhite fontReg">
+                        <form action="index.html" method="post">
+                            <textarea name="name" rows="10" cols="30" placeholder="Do you wish to remove any ingredients?"></textarea>
+                        </form>
+                    </div>
+
+                    <div class="displayFlex addOrderFlex">
+                        <div id="addToOrder" class="addOrderButton fontMd textCenter">
+                            <a href="#addToOrder" class="addToOrderStyle">ADD TO ORDER</a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+
+
+                <div id="modalWaiter" class="modal hidden">
+
+                    <div class="modalWaiter">
+
+                       <div class="modalClose">
+                           <h3 id="modalClose">&#10005;</h3>
+                       </div>
+                       <div class="textCenter fontMd displayFlex">
+                           <h3 class="borderTop">HELP IS ON<br>THE WAY!</h3>
+                       </div>
+
+                   </div>
+               </div>
+
+
+               <div id="modalOrderPlaced" class="modal hidden">
+                   <div class="modalAddOrder2">
+                       <div class="modalClose displayNone">
+                           <h3 id="modalCloseOrderPlaced">&#10005;</h3>
+                       </div>
+
+                       <div class="textCenter">
+                           <h2 class="fontSmB paddingBot">YOUR ORDER HAS BEEN PLACED</h2>
+                       </div>
+
+
+                       <div class="modalOrderBox2 bgWhite fontReg">
+                           <form action="index.html" method="post">
+                               <textarea name="name" rows="10" cols="30" placeholder="Please leave some feedback about your ordering experience..."></textarea>
+                           </form>
+                       </div>
+
+                       <div class="displayFlex closeOrderPlacedFlex">
+                           <div id="closeOrderPlaced" class="closeOrderPlacedButton fontMd textCenter">
+                               <a href="index.html" class="closeOrderPlacedStyle">CLOSE</a>
+                           </div>
+                           </div>
+                       </div>
+
+                    </div>
+               </div>
+
+
+
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://kit.fontawesome.com/f9143b1a53.js" charset="utf-8"></script>
+                <script src="js/script.js" charset="utf-8"></script>
+            </body>
+        </html>
